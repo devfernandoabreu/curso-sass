@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+@mixin menu($cor-principal: #ff00ff, $cor-hover: #fff, $altura: 60px){
+	#menu{
+		width: 100%;
+		background-color: $cor-principal;
+		display: flex;
+		justify-content: flex-end;
+		ul{
+			width: 800px;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			li{
+				a{
+					line-height: 0;
+					text-decoration: none;
+					padding: $altura/2 $altura/4;
+					display: block;
+					color: $cor-hover;
+					text-transform: uppercase;
+					transition: 0.3s;
+					&:hover, &:focus{
+						background: $cor-hover;
+						color: $cor-principal;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+@include menu();

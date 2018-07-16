@@ -1,0 +1,39 @@
+h1 { color: blue; }
+
+body { background-color: white; }
+
+div.item-1 { background: black; }
+
+div.item-2 { background: black; }
+
+div.item-3 { background: black; }
+
+div.item-4 { background: black; }
+
+.icone-insta { background: url(img/insta.png); }
+
+.icone-face { background: url(img/face.png); }
+
+.icone-youtube { background: url(img/youtube.png); }
+
+.icone-insta { background: url(img/insta.png); }
+
+.icone-face { background: url(img/face.png); }
+
+.icone-youtube { background: url(img/youtube.png); }
+
+div.item-1 { background: green; }
+
+div.item-2 { background: yellow; }
+
+div.item-3 { background: blue; }
+
+div.item-4 { background: black; }
+
+div.item-1 { background: #ff2233; }
+
+div.item-2 { background: #ff4466; }
+
+div.item-3 { background: #ff6699; }
+
+/*# sourceMappingURL=style.css.map */

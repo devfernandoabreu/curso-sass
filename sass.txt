@@ -1,0 +1,36 @@
+Curso de SASS
+
+Primeiro baixar o rubyinstaller
+
+-Abrir o pront comand e instalar a gem do sass
+comando: gem install sass
+-Criar uma pasta de para utilizar o sass
+comando: cd "Até a pasta de destino"
+-Comando para compilar
+comando: sass arquivo.scss arquivo.css
+-Comando para compilar o arquivo automaticamente
+comando: sass --watch arquivo.scss:arquivo.css
+-Comando para compilar uma pasta scss para outra em css
+comando: sass --watch scss:css
+-Sass Interface grafic(Koala-app)
+-Sass Versão online(https://www.sassmeister.com/)
+-Modificando saída
+comando: sass --watch sass:css --style (nested/expanded/compact/compressed)
+-comentário para arquivos minificados Ex: /*! aqui comentario */
+-comentário para não aparecer no arquivo compilado usa
+-se usa & para referenciar um seletor pai
+-interpolação é usado com #{$variavel}
+-para usar namespace usa a sintaxe border:{color: black; style: solid; width: 2px;}
+-escopo de variável global (!global)
+-para definir se a variável não foio definida (!default)
+-variáveis no sass pode ser definida com $var_iavel ou $var-iavel
+-shell script do sass, comando sass -i
+-descobrir o tipo de variável type-of($variavel)
+-É possível colocar imports no sass, da seguinte maneira @important 'nome-arquivo', @important url('url');
+-partils se usa '_' para iniciar o nome do arquivo e ele não é compilado como css, só quando importado em um arquivo .scss ou .sass
+-mixin são tipo funções que vc pode criar para otimizar o seu código @include para incluir
+-herança no sass, %componente1{ ... }, .class{ @extend %componente1; }
+-funções para cores lighten(blue, 30%), darken(blue, 30%), saturate(#404040, 100%), rgba(#F00, 0.5)
+-concatenação se usa "+";
+-para definir uma variável em um escopo usa se "!global";
+-para criar função: @function($va1, ...){@return $res; }

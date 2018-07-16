@@ -1,0 +1,38 @@
+@mixin tema($horario: ""){
+	@if $horario == manha{
+		background-color: white;
+		color: black;
+	}@else if $horario == tarde{
+		background-color: blue;
+		color: yellow;
+	}@else if $horario == noite{
+		background-color: black;
+		color: white;
+	}@else{
+		background-color: yellow;
+		color: blue;
+	}
+}
+
+@mixin colorir($cor, $propriedade, $tom){
+
+	@if($tom == 1){
+		#{$propriedade}: lighten($cor, 40%);
+	}@else if($tom == 2){
+		#{$propriedade}: lighten($cor, 20%);
+	}@else if($tom == 3){
+		#{$propriedade}: lighten($cor, 10%);
+	}@else if($tom == 4){
+		#{$propriedade}: lighten($cor, 0%);
+	}@else if($tom == 5){
+		#{$propriedade}: darken($cor, 15%);
+	}@else if($tom == 6){
+		#{$propriedade}: darken($cor, 20%);
+	}
+
+}
+
+body{
+	@include colorir(red, background, 5);
+	@include colorir(yellow, color, 2);
+}

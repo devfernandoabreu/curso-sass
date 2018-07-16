@@ -1,0 +1,53 @@
+
+//if else
+$color: blue;
+
+@if $color == blue {
+	h1{ color: $color; }
+	body{ background-color: white; }
+}@else{
+	h1{ color: $color; }
+	body{ background-color: black; }
+}
+
+//for
+
+@for $i from 1 to 5{
+	div.item-#{$i}{
+		background: black;
+	}
+}
+
+//each
+
+@each $icon in insta, face, youtube{
+	.icone-#{$icon}{
+		background: url(img/#{$icon}.png);
+	}
+}
+
+$redes-sociais:(insta, face, youtube);
+@each $icon in $redes-sociais{
+	.icone-#{$icon}{
+		background: url(img/#{$icon}.png);
+	}
+}
+
+$lista: green, yellow, blue, black;
+$cont: 1;
+@each $cor in $lista{
+	div.item-#{$cont}{
+		background: $cor;
+	}
+	$cont: $cont + 1;
+}
+
+//while
+
+$cont: 1;
+@while $cont < 4{
+	div.item-#{$cont}{
+		background: #f23 * $cont;
+	}
+	$cont: $cont + 1;
+}

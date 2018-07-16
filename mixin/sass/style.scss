@@ -1,0 +1,10 @@
+@mixin colorir($cor1, $cor2){
+	background: $cor1;
+	color: $cor2;
+}
+
+h1{
+	$cor1: red;
+	$cor2: #fff;
+	@include colorir($cor1, $cor2);
+}

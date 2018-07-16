@@ -1,0 +1,8 @@
+* { margin: 0; padding: 0; font-family: 'Arial', sans-serif; }
+
+#menu { width: 100%; background-color: #ff00ff; display: flex; justify-content: flex-end; }
+#menu ul { width: 800px; list-style: none; display: flex; justify-content: space-between; }
+#menu ul li a { line-height: 0; text-decoration: none; padding: 30px 15px; display: block; color: #fff; text-transform: uppercase; transition: 0.3s; }
+#menu ul li a:hover, #menu ul li a:focus { background: #fff; color: #ff00ff; }
+
+/*# sourceMappingURL=style.css.map */
